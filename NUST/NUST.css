@@ -1,0 +1,98 @@
+h1 {background-color: rgb(128, 183, 242);
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+/* 初めの文 */
+.start{background-color: white;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* div.image_and_twitter{
+
+  display: flex;
+}
+
+img.meidai_pool{
+ flex: 1;
+  width:100px;
+
+ height: 300px;
+}
+
+div.twitter-timeline
+{
+  flex:1;
+  width:200px;
+  height: 100px;
+ } */
+
+
+/* 誘導リスト */
+ul {
+    list-style-type: none; /* リストのマーカーを削除 */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* メニューバーの背景色 */
+    overflow: hidden;
+    margin-top: 0;
+  }
+  
+  li {
+    float: left; /* メニューアイテムを横に並べる */
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  li a:hover {
+    background-color: #4e4d4d; /* マウスホバー時の背景色 */
+  }
+
+li {font-size: 20px;}
+
+
+
+
+/* 活動実績 */
+table.ivent{border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    width:1000px
+}
+
+
+tr,td{border: 1px solid black;
+    padding: 8px;
+}
+
+td{text-align: center;}
+
+.meidai_pool{
+    display: block; /* インライン要素をブロック要素に変更 */
+    margin: 0 auto; /* 左右のマージンを自動調整して中央揃え */
+    width: 50%;
+}
+
+nav.menubar{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    list-style-position:inside;
+    background-color: skyblue;
+    padding-left: 0;
+}
+

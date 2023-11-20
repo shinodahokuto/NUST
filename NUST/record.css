@@ -1,0 +1,166 @@
+
+
+h1 {background-color: rgb(128, 183, 242);
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+/* 誘導リスト */
+ul {
+    list-style-type: none; /* リストのマーカーを削除 */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* メニューバーの背景色 */
+    overflow: hidden;
+    margin-top: 0;
+  }
+  
+  li {
+    float: left; /* メニューアイテムを横に並べる */
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  li a:hover {
+    background-color: #4e4d4d; /* マウスホバー時の背景色 */
+  }
+
+li {font-size: 20px;}
+ 
+
+
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.standard_record{
+    display: block;
+    font-size: 20px;
+}
+
+
+
+    
+tr,td{border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+   
+
+}
+table.record{border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+div.bottun{
+    text-align: center;
+}
+
+
+
+
+/* ラジオボタンの非表示 */
+input[type="radio"].tab_m11 {
+    display: none;
+}
+/* ラジオボタンのカスタムスタイル */
+input[type="radio"].tab_m11 + label.style {
+    display: inline-block;
+    border: 2px solid #000; /* 枠線のスタイル */
+    padding: 10px 10px; /* ボタンのパディング */
+    cursor: pointer;
+    font-weight: bold;
+    width: 230px;
+    height: 50px;
+    font-size: 30px;
+    background-color: aqua;
+} 
+/* ラジオボタンが選択された際のスタイル */
+input[type="radio"].tab_m11:checked + label.style {
+    background-color: #a09c9c; /* 選択時の背景色 */
+    color: #0f0e0e; /* 選択時のテキスト色 */
+    /* その他のスタイルを追加 */
+}
+
+
+/*距離を決めるラジオボタン*/
+
+/* ラジオボタンの非表示 */
+input[type="radio"].tab_m12 {
+    display: none;
+}
+div.distance_label{
+    text-align: center;
+
+}
+/* ラジオボタンのカスタムスタイル */
+input[type="radio"].tab_m12 + label.distance {
+    display: inline-block;
+    border: 2px solid #000; /* 枠線のスタイル */
+    padding: 10px 10px; /* ボタンのパディング */
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(205, 243, 243);
+    text-align: center;
+    margin: 10px auto ;
+} 
+/* ラジオボタンが選択された際のスタイル */
+input[type="radio"].tab_m12:checked + label.distance {
+    background-color: #a09c9c; /* 選択時の背景色 */
+    color: #0f0e0e; /* 選択時のテキスト色 */
+    /* その他のスタイルを追加 */
+}
+
+/* コンテンツサイズを変更 */
+.record_content{
+    margin: 10px auto;
+    width:1600px;
+    height: 700px;
+    padding: auto;
+}
+
+/* 長水路短水路のラベル */
+p.course{
+    font-weight: bold;
+    background-color: rgb(163, 162, 162);
+    font-size: 40px;
+    text-align: center;
+}
+p.age{text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgb(240, 209, 152);
+    font-size: 25px;
+}
+  
+/* 長水路と短水路を右左に分割する */
+.content_split{
+    display: flex;
+    width:100%;
+}
+
+.long_course,
+.short_course{
+    flex: 1;
+    width:40%;
+    border:3px solid black;
+    margin: 0 10px;
+    padding: 10px;
+    padding-bottom: 200px;
+
+}

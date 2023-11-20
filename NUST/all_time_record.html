@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nust</title>
+    <link rel="stylesheet" href="record.css">
+    <script src="javascript/style_button.js"></script>
+    <script src="javascript/fr_distance_button.js"></script>
+    <script src="javascript/br_distance_button.js"></script>
+    <script src="javascript/fly_distance_button.js"></script>
+    <script src="javascript/ba_distance_button.js"></script>
+    <script src="javascript/IM_distance_button.js"></script>
+    <script src="javascript/relay_distance_button.js"></script>
+    
+
+</head>
+<body>
+    <main>
+
+        <h1>NUST</h1>
+        <nav class="menubar">
+
+            <ul>
+                <li>
+                    <a href="C:\Users\hokuto\OneDrive - 国立大学法人東海国立大学機構\デスクトップ\web\NUST\NUST.html">ホーム</a>
+                    </li>
+                <li>
+                <a href="C:\Users\hokuto\OneDrive - 国立大学法人東海国立大学機構\デスクトップ\web\NUST\all_time_record.html" class="record">歴代記録</a>
+                </li>
+                <li>
+                    <a href="C:\Users\hokuto\OneDrive - 国立大学法人東海国立大学機構\デスクトップ\web\NUST\member.html" class="member">メンバー紹介</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>歴代記録 <a href="https://swim.or.jp/swim/japan_record/2023/09/" class="standard_record">日本社会人選手権水泳競技大会 標準記録一覧</a></h2>
+
+
+        <div class="bottun">
+            <input class ="tab_m11" id="free"  type="radio" onclick="change_style_free()"  checked>
+                
+                <label class="style" for="free"  >
+                    自由形
+                </label>
+
+            <input class="tab_m11" id="breast"  type="radio" onclick="change_style_breast()">
+                <label class="style" for="breast"  >
+                    平泳ぎ
+                </label>
+            <input class="tab_m11" id="fly"  type="radio" onclick="change_style_fly()">
+                <label class="style" for="fly"  >
+                    バタフライ
+                </label>
+            <input class="tab_m11" id="back"  type="radio" onclick="change_style_back()">
+                <label class="style" for="back"  >
+                    背泳ぎ
+                </label>
+            <input class="tab_m11" id="IM"  type="radio" onclick="change_style_IM()">
+                <label class="style" for="IM"  >
+                    個人メドレー
+                </label>
+            <input class="tab_m11" id="relay"  type="radio" onclick="change_style_relay()">
+                <label class="style" for="relay"  >
+                    リレー
+                </label>
+        </div>
+
+        
+        <div class="record_content">
+            <div id="freeContent" class="freeContent">
+                <div class="distance_label">
+                    <input class ="tab_m12" id="50_fr"  type="radio" onclick="fr_distance_50()" checked  >
+                        
+                        <label class="distance" for="50_fr" >
+                            50m
+                        </label>
+
+                    <input class="tab_m12" id="100_fr"  type="radio" onclick="fr_distance_100()">
+                        <label class="distance" for="100_fr"  >
+                            100m
+                        </label>
+                    <input class="tab_m12" id="200_fr"  type="radio" onclick="fr_distance_200()">
+                        <label class="distance" for="200_fr"  >
+                            200m
+                        </label>
+                    <input class="tab_m12" id="400_fr"  type="radio" onclick="fr_distance_400()">
+                        <label class="distance" for="400_fr"  >
+                            400m
+                        </label>
+                    <input class="tab_m12" id="800_fr"  type="radio" onclick="fr_distance_800()">
+                        <label class="distance" for="800_fr"  >
+                            800m
+                        </label>
+                    <input class="tab_m12" id="1500_fr"  type="radio" onclick="fr_distance_1500()">
+                        <label class="distance" for="1500_fr"  >
+                            1500m
+                        </label>
+                </div>
+
+                <div id="fr_50_content" class="content_split">
+                    
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>篠田北斗</td>
+                                <td>25.03</td>
+                                <td>2023 短水路スプリント記録会 in 愛知</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                </div>
+                <div id="fr_100_content" class="content_split">
+
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>森本貴大</th>
+                                <th>56.77</th>
+                                <th>日本社会人選手権水泳競技大会</th>
+                                <th>2023</th>
+
+                            </tr>
+
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
+                        </div>
+                    <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </table>
+                        </div>
+                </div>
+                <div id="fr_200_content">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
+                        </div>
+                    <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </table>
+                        </div>
+                    </div>
+                <div id="fr_400_content">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
+                        </div>
+                    <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </table>
+                        </div>
+                    </div>
+                <div id="fr_800_content">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
+                        </div>
+                    <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </table>
+                        </div>
+                    </div>
+                <div id="fr_1500_content">
+                        <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
+                        </div>
+                    <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </table>
+                        </div>
+                </div>
+            </div>
+            <div id="breastContent" class="breastContent">
+                <div class="distance_label">
+                    <input class ="tab_m12" id="50_br"  type="radio" onclick="br_distance_50()"  >
+                        
+                        <label class="distance" for="50_br" >
+                            50m
+                        </label>
+
+                    <input class="tab_m12" id="100_br"  type="radio" onclick="br_distance_100()">
+                        <label class="distance" for="100_br"  >
+                            100m
+                        </label>
+                    <input class="tab_m12" id="200_br"  type="radio" onclick="br_distance_200()">
+                        <label class="distance" for="200_br"  >
+                            200m
+                        </label>
+                </div>
+                <div id="br_50_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>山西正悟</td>
+                                <td>31.03</td>
+                                <td>高知県選手権水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>篠田北斗</td>
+                                <td>31.06</td>
+                                <td>日本社会人選手権水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        
+
+                            <tr>
+                                <td>1</td>
+                                <td>篠田北斗</td>
+                                <td>29.93</td>
+                                <td>2023 短水路スプリント記録会 in 愛知</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>>
+                <div id="br_100_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+                <div id="br_200_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="flyContent" class="flyContent">
+            <div class="distance_label">
+                <input class ="tab_m12" id="50_fly"  type="radio" onclick="fly_distance_50()"  >
+                    
+                    <label class="distance" for="50_fly" >
+                        50m
+                    </label>
+
+                <input class="tab_m12" id="100_fly"  type="radio" onclick="fly_distance_100()">
+                    <label class="distance" for="100_fly"  >
+                        100m
+                    </label>
+                <input class="tab_m12" id="200_fly"  type="radio" onclick="fly_distance_200()">
+                    <label class="distance" for="200_fly"  >
+                        200m
+                    </label>
+            </div>
+            <div id="fly_50_content" class="content_split">
+                <div class="long_course">
+                    <p class="course">長水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>山西正悟</td>
+                            <td>25.93</td>
+                            <td>高知県選手権水泳競技大会</td>
+                            <td>2023</td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>森本貴大</td>
+                            <td>27.11</td>
+                            <td>愛知県選手権水泳競技大会</td>
+                            <td>2023</td>
+
+                        </tr>
+                    
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+
+                <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    
+
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+            </div>>
+            <div id="fly_100_content" class="content_split">
+                <div class="long_course">
+                    <p class="course">長水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+
+                <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+            </div>
+            <div id="fly_200_content" class="content_split">
+                <div class="long_course">
+                    <p class="course">長水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+
+                <div class="short_course">
+                    <p class="course">短水路</p>
+                    <p class="age">20代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    
+                        
+                    </table>
+                    <p class="age">30代</p>
+                    <table border="1" class="record">
+                        <tr>
+                            <th>順位</th>
+                            <th>名前</th>
+                            <th>タイム</th>
+                            <th>大会名</th>
+                            <th>年</th>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+            </div>
+            </div>
+
+            <div id="backContent" class="backContent">
+                <div class="distance_label">
+                    <input class ="tab_m12" id="50_ba"  type="radio" onclick="ba_distance_50()"  >
+                        
+                        <label class="distance" for="50_ba" >
+                            50m
+                        </label>
+
+                    <input class="tab_m12" id="100_ba"  type="radio" onclick="ba_distance_100()">
+                        <label class="distance" for="100_ba"  >
+                            100m
+                        </label>
+                    <input class="tab_m12" id="200_ba"  type="radio" onclick="ba_distance_200()">
+                        <label class="distance" for="200_ba"  >
+                            200m
+                        </label>
+                </div>
+                <div id="ba_50_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>森本貴大</td>
+                                <td>27.31</td>
+                                <td>三重とこわか水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        
+
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>>
+                <div id="ba_100_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>森本貴大</td>
+                                <td>1.02.75</td>
+                                <td>日本社会人選手権水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+                <div id="ba_200_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="IMContent" class="IMContent">
+                <div class="distance_label">
+                    <input class ="tab_m12" id="100_IM"  type="radio" onclick="IM_distance_100()"  >
+                        
+                        <label class="distance" for="100_IM" >
+                            100m
+                        </label>
+
+                    <input class="tab_m12" id="200_IM"  type="radio" onclick="IM_distance_200()">
+                        <label class="distance" for="200_IM"  >
+                            200m
+                        </label>
+                    <input class="tab_m12" id="400_IM"  type="radio" onclick="IM_distance_400()">
+                        <label class="distance" for="400_IM"  >
+                            400m
+                        </label>
+                </div>
+
+                <div id="IM_100_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+                <div id="IM_200_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>森本貴大</td>
+                                <td>2.18.09</td>
+                                <td>日本社会人選手権水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        
+
+                            <tr>
+                                <td>1</td>
+                                <td>森本貴大</td>
+                                <td>2.11.01</td>
+                                <td>三重とこわか水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>>
+                
+                <div id="IM_400_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="relayContent" class="relayContent">
+                <div class="distance_label">
+                    <input class ="tab_m12" id="200_relay"  type="radio" onclick="relay_distance_200()"  >
+                        
+                        <label class="distance" for="200_relay" >
+                            200m
+                        </label>
+
+                    <input class="tab_m12" id="400_relay"  type="radio" onclick="relay_distance_400()">
+                        <label class="distance" for="400_relay"  >
+                            400m
+                        </label>
+                    <input class="tab_m12" id="800_relay"  type="radio" onclick="relay_distance_800()">
+                        <label class="distance" for="800_relay">
+                            800m
+                        </label>
+                
+                    <input class="tab_m12" id="medley_relay"  type="radio" onclick="medley_relay()">
+                        <label class="distance" for="medley_relay"  >
+                            メド継
+                        </label>
+                </div>
+                <div id="relay_200_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        
+
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>>
+                <div id="relay_400_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td>日本社会人選手権水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+                <div id="relay_800_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+                <div id="medley_content" class="content_split">
+                    <div class="long_course">
+                        <p class="course">長水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>森本,則次,篠田,山西</td>
+                                <td>4.15.08</td>
+                                <td>日本社会人選手権水泳競技大会</td>
+                                <td>2023</td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+
+                    <div class="short_course">
+                        <p class="course">短水路</p>
+                        <p class="age">20代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        
+                            
+                        </table>
+                        <p class="age">30代</p>
+                        <table border="1" class="record">
+                            <tr>
+                                <th>順位</th>
+                                <th>名前</th>
+                                <th>タイム</th>
+                                <th>大会名</th>
+                                <th>年</th>
+                            </tr>
+
+                            
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+ 
+       
+
+
+        <script>//初期状態で表示させないため
+            var freeContent = document.getElementById('freeContent');
+            var breastContent = document.getElementById('breastContent');
+            var flyContent = document.getElementById('flyContent');
+            var backContent = document.getElementById('backContent');
+            var IMContent = document.getElementById('IMContent');
+            var relayContent = document.getElementById('relayContent');
+
+           
+            document.getElementById("fr_100_content").style.display="none";
+            document.getElementById("fr_200_content").style.display="none";
+            document.getElementById("fr_400_content").style.display="none";
+            document.getElementById("fr_800_content").style.display="none";
+            document.getElementById("fr_1500_content").style.display="none";
+
+            breastContent.style.display = 'none';
+            flyContent.style.display="none";
+            backContent.style.display="none";
+            IMContent.style.display="none";
+            relayContent.style.display="none";
+            
+        </script>
+
+
+    </main>
+</body>
+</html>
